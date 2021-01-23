@@ -67,3 +67,9 @@ Enjoy!
 [11]: https://symfony.com/doc/2.8/cookbook/logging/monolog.html
 [13]: https://symfony.com/doc/2.8/bundles/SensioGeneratorBundle/index.html
 # Symfony-ECommerce
+*** Projet basé sur Symfony 2.8 pour maitriser une ancienne version ***
+
+* Création d'un site de E-commerce
+
+1 - Installation du projet
+* `composer create-project symfony/framework-standard-edition Symfony-ECommerce "2.8.*"`
