@@ -73,3 +73,12 @@ Enjoy!
 
 1 - Installation du projet
 * `composer create-project symfony/framework-standard-edition Symfony-ECommerce "2.8.*"`
+
+2 - Création du bundle EcommerceBundle
+* `app/console --version`
+* Erreur à la génération
+* `Checking that the bundle is autoloaded: [2021-01-24 00:41:44] php.CRITICAL: Parse error: syntax error, unexpected 'extends' (T_EXTENDS)`
+* Modification de composer.json  pour utiliser PHP v7.2 minimum
+* Suppression de composer.lock
+* Lancement de composer install
+* Création du bundle EcommerceBundle

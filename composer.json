@@ -5,10 +5,10 @@
     "description": "The \"Symfony Standard Edition\" distribution",
     "autoload": {
         "psr-4": { "": "src/" },
-        "files": [ "app/AppKernel.php" ]
+        "files": ["app/AppKernel.php"]
     },
     "require": {
-        "php": ">=5.3.9",
+        "php": ">=7.2",
         "symfony/symfony": "2.8.*",
         "doctrine/orm": "^2.4.8",
         "doctrine/doctrine-bundle": "~1.4",
