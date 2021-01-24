@@ -1,4 +1,8 @@
-Salut {{ firstname }} {{ lastname }} !
-Ta femme s'appelle {{ wife }} !
+{% set son = 'Julo' %}
+{# set a internal variable in view #}
 
-{# firstname and lastname are variables retrieved from array came from URL #}
+Salut {{ firstname }} {{ lastname }} !
+Ta femme s'appelle {{ wife }}  !
+{# "firstname" "lastname" and "wife" are variables retrieved from array came from URL/controller #}
+
+Et ton fils s'appelle {{ son }} !
