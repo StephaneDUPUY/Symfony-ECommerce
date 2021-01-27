@@ -66,15 +66,19 @@ Enjoy!
 [10]: https://symfony.com/doc/2.8/cookbook/email.html
 [11]: https://symfony.com/doc/2.8/cookbook/logging/monolog.html
 [13]: https://symfony.com/doc/2.8/bundles/SensioGeneratorBundle/index.html
+
 # Symfony-ECommerce
+
 *** Projet basé sur Symfony 2.8 pour maitriser une ancienne version ***
 
 * Création d'un site de E-commerce
 
 1 - Installation du projet
+
 * `composer create-project symfony/framework-standard-edition Symfony-ECommerce "2.8.*"`
 
 2 - Création du bundle EcommerceBundle
+
 * `app/console --version`
 * Erreur à la génération
 * `Checking that the bundle is autoloaded: [2021-01-24 00:41:44] php.CRITICAL: Parse error: syntax error, unexpected 'extends' (T_EXTENDS)`
@@ -82,3 +86,21 @@ Enjoy!
 * Suppression de composer.lock
 * Lancement de composer install
 * Création du bundle EcommerceBundle
+
+3 - Tests de fonctions internes
+
+A - Routes
+
+* routes
+<https://symfony.com/doc/2.8/routing.html>
+
+B - Twig
+
+* variables
+<https://twig.symfony.com/doc/1.x/tags/set.html>
+* boucles
+<https://twig.symfony.com/doc/1.x/tags/for.html>
+* filtre upper
+<https://twig.symfony.com/doc/1.x/filters/upper.html>
+* filtre date
+<https://twig.symfony.com/doc/1.x/filters/date.html>

@@ -1,8 +1,49 @@
 {% set son = 'Julo' %}
 {# set a internal variable in view #}
 
-Salut {{ firstname }} {{ lastname }} !
-Ta femme s'appelle {{ wife }}  !
+Salut {{ firstname }} {{ lastname }} !<br />
+Ta femme s'appelle {{ wife }}  !<br />
 {# "firstname" "lastname" and "wife" are variables retrieved from array came from URL/controller #}
 
-Et ton fils s'appelle {{ son }} !
+Et ton fils s'appelle {{ son }} !<br />
+<br />
+
+{# loop on value between 2 numbers #}
+{% for i in 0..10 %}
+    {{ i }}<br />
+{% endfor %}
+<br />
+
+{# loop on value between 2 letters #}
+{% for i in 'a'..'z' %}
+    {{ i }}<br />
+{% endfor %}
+<br />
+
+{# retrieve index from value on the loop #}
+{% for i in 'a'..'z' %}
+    {{ loop.index }} => {{ i }}<br />
+{% endfor %}
+<br />
+
+{# retrieve index bgin at 0 from value on the loop #}
+{% for i in 'a'..'z' %}
+    {{ loop.index0 }} => {{ i }}<br />
+{% endfor %}
+<br />
+
+{# loop on value between 2 letters and filter letter in uppercase #}
+{% for i in 'a'..'z' %}
+    {{ i|upper }}<br />
+{% endfor %}
+<br />
+
+{# display date of the day #}
+Aujourd'hui, on est le {{ "now"|date("d/m/Y") }} et il est {{ "now"|date("h:i:s") }}
+<br />
+
+{# display list from array passed in view from controller #}
+Mes animaux:
+{% for pet in pets %}
+    {{ pet }}
+{% endfor %}
