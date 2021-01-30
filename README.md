@@ -86,6 +86,8 @@ Enjoy!
 * Suppression de composer.lock
 * Lancement de composer install
 * Création du bundle EcommerceBundle
+* Ne pas oublier qu'en version de dev il faut que l'URL passe par /app_dev.php/
+Exemple: `Symfony-ECommerce/web/app_dev.php/.....`
 
 3 - Tests de fonctions internes
 
